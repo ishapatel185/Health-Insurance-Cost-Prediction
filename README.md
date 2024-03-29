@@ -13,7 +13,7 @@ The user interface is developed using Streamlit, a Python library for building i
 
 To run the application locally, clone the repository, install dependencies, and run the Streamlit application:
 ```javascript
-git clone https://github.com/your_username/medical-insurance-charges-prediction.git
+git clone https://github.com/ishapatel185/medical-insurance-charges-prediction.git
 cd medical-insurance-charges-prediction
 pip install -r requirements.txt
 streamlit run app.py
