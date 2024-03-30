@@ -1,23 +1,24 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.metrics import r2_score
+
 
 # Load data
 medical_df = pd.read_csv('insurance.csv')
+
 
 # Data preprocessing
 medical_df.replace({'sex': {'male': 0, 'female': 1}}, inplace=True)
 medical_df.replace({'smoker': {'yes': 0, 'no': 1}}, inplace=True)
 medical_df.replace({'region': {'southeast': 0, 'southwest': 1, 'northwest': 2, 'northeast': 3}}, inplace=True)
 
+
 # Split data into features and target
 X = medical_df.drop('charges', axis=1)
 y = medical_df['charges']
 
-# Train the model
-from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.metrics import r2_score
 
 # Train the model
 gbm = GradientBoostingRegressor(n_estimators=100, random_state=42)
