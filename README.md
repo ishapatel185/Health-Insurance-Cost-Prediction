@@ -1,5 +1,5 @@
 
-# Health-Insurance-Cost-Prediction
+# Medical-Insurance-Cost-Prediction
 This project aims to predict medical insurance charges using machine learning techniques. The prediction model is built using Gradient Boosting Regression, and the user interface is developed using Streamlit.
 
 
