@@ -27,7 +27,7 @@ gbm.fit(X, y)
 
 # Define Streamlit app
 def main():
-    st.title("Medical Insurance Prediction Model")
+    st.title("Medical Insurance Cost Prediction")
     age = st.number_input("Enter age", min_value=0, step=1)
     sex = st.radio("Select sex", options=['Male', 'Female'])
     sex_encoded = 0 if sex == 'Male' else 1
